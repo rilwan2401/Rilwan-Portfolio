@@ -1,0 +1,74 @@
+/* Hallmark · genre: atmospheric · macrostructure: Bento Grid · theme: Midnight
+ * tone: technical · anchor hue: amber 65 · enrichment: Tier D three.js focal scene · nav: N5 · footer: Ft5
+ */
+
+:root {
+	/* Paper — dark band */
+	--color-paper: oklch(16% 0.012 260);
+	--color-paper-2: oklch(20% 0.014 260);
+	--color-paper-3: oklch(25% 0.016 260);
+	--color-line: oklch(32% 0.016 260);
+	--color-paper-glass: oklch(20% 0.014 260 / 0.72);
+
+	/* Ink */
+	--color-ink: oklch(96% 0.006 80);
+	--color-ink-2: oklch(84% 0.008 260);
+	--color-ink-3: oklch(66% 0.012 260);
+
+	/* Accent — single warm hue, secondary only for bloom */
+	--color-accent: oklch(79% 0.15 65);
+	--color-accent-ink: oklch(20% 0.04 60);
+	--color-accent-soft: oklch(79% 0.15 65 / 0.14);
+	--color-accent-line: oklch(79% 0.15 65 / 0.45);
+	--color-bloom-1: oklch(62% 0.16 60 / 0.22);
+	--color-bloom-2: oklch(58% 0.17 15 / 0.14);
+	--color-focus: oklch(85% 0.14 70);
+	--color-success: oklch(78% 0.14 150);
+
+	/* sRGB mirrors for the WebGL scene (three.js can't parse oklch) */
+	--color-accent-srgb: #f2a64b;
+	--color-ink-srgb: #e9e6e1;
+	--color-line-srgb: #3a4150;
+
+	/* Type */
+	--font-display: "Geist", system-ui, sans-serif;
+	--font-body: "Geist", system-ui, sans-serif;
+	--font-mono: "Geist Mono", ui-monospace, monospace;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.375rem;
+	--text-2xl: 1.75rem;
+	--text-3xl: clamp(2rem, 3vw + 1rem, 2.75rem);
+	--text-display: clamp(2.6rem, 6vw + 1rem, 5.75rem);
+
+	/* Space — 4pt scale */
+	--space-2xs: 0.25rem;
+	--space-xs: 0.5rem;
+	--space-sm: 0.75rem;
+	--space-md: 1rem;
+	--space-lg: 1.5rem;
+	--space-xl: 2rem;
+	--space-2xl: 3rem;
+	--space-3xl: 5rem;
+	--space-4xl: 8rem;
+
+	--radius-sm: 0.5rem;
+	--radius-md: 1rem;
+	--radius-lg: 1.5rem;
+	--radius-pill: 999px;
+
+	--rule-1: 1px solid var(--color-line);
+
+	/* Motion */
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+	--ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+	--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+	--dur-fast: 150ms;
+	--dur-base: 260ms;
+	--dur-slow: 700ms;
+
+	--shadow-glow: 0 24px 60px -24px oklch(70% 0.15 60 / 0.45);
+}
